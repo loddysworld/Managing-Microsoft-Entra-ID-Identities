@@ -249,7 +249,7 @@ If you are working with your own subscription take a minute to delete the lab re
 
 + In the Azure portal, select the resource group, select **Delete the resource group**, **Enter resource group name**, and then click **Delete**.
 + Using Azure PowerShell, `Remove-AzResourceGroup -Name resourceGroupName`.
-![Deleteresourcegroup](https://imgur.com/3tZvhQc)
+![step23](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/b58eb9f6-526b-41fe-8bfa-6d1a8938dc96)
 + Using the CLI, `az group delete --name resourceGroupName`.
 ![Deleteresourcegroup](https://i.imgur.com/kJtpiio.png)
 
