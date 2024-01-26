@@ -1,4 +1,4 @@
-# Managing-Microsoft-Entra-ID-Identities
+# Creating Microsoft Azure Entra-ID Identities
 
 <h2>Description</h2>
 In this Tutorial, we will be diving into the Fundamentals of an Azure Administrator with creating and understanding of groups and users. These are the basic building blocks for Identity Management and Priviledged Management.
