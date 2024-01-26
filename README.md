@@ -30,8 +30,9 @@ In this step, we will be creating a Resource Group for the Company. A resource g
    
 1. In the Azure portal, search for and select `Resource groups`.
 
-image1 and 2
+![step1](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/e034380b-9563-4cbb-a586-c03456b9470e)
 
+![step2](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/177d8daa-a76b-4f58-9543-4fdb089e76cb)
    
 1. On the **Resource groups** blade, click **+ Create**, and provide the required information. 
 
@@ -41,7 +42,7 @@ image1 and 2
     | Resource group name | `workhard.rg1` |
     | Location | **East US** |
 
-image 3
+![step3](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/8fc62d67-9dc4-4693-ba4f-5fe0141ce137)
 
 
 ## Step 2: Create and configure user accounts
@@ -54,12 +55,13 @@ In this step, you will create and configure user accounts. User accounts will st
 
 1. Microsoft Entra ID is Azure's cloud-based identity and access management solution (Active Directory).
 
-image 4
+![step4](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/5893c3f5-b9df-4cfb-8dff-d5bde0969eb3)
 
 ### Create a new user
 
 1. Select **Users**, then in the **New user** drop-down select **Create new user**.
-image 5
+   
+![step5](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/acff6b4b-e8bf-433e-b689-6435fe9c624d)
 
 1. Create a new user with the following settings (leave others with their defaults). On the **Properties** tab notice all the different types of information that can be included in the user account. 
 
@@ -76,12 +78,15 @@ image 5
     >**Note:** For this exercise you may use any password but a strong and secure Password is imperative and recommended for the security and well-being of the company. Weak passwords lead to unauthorized access from bruteforce attacks and Compliance Issues due to data vulnerability.
 
 1. Once you have finished reviewing, select **Review + create** and then **Create**.
-   image6
+
+![step6](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/12f7d215-d222-4e12-899f-3c10866bf9bc)
 
 ### Invite an external user
 
-1. Select **Users**, then in the **New user** drop-down select **Invite an external user**. 
-**image7
+1. Select **Users**, then in the **New user** drop-down select **Invite an external user**.
+   
+![step7](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/8077c66c-2493-456f-9261-8d6b41856726)
+
     | Setting | Value |
     | --- | --- |
     | Email | your email address |
@@ -91,8 +96,10 @@ image 5
 
 1. Move to the **Properties** tab. Notice the **User type** is **Guest**. Notice the user account information is similar to creating a new user.
 
-1. Select **Review + invite**, and then **Invite**. 
-**image 8
+1. Select **Review + invite**, and then **Invite**.
+
+![step8](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/374b53e8-dd73-428a-96c6-ccfa5044f831)
+
 >**Note:** You are unlikely to be creating accounts individually. Are you aware of of the plans your organization have implemented to create and manage user accounts?
 
 ### Step 4: Create group accounts and add members
@@ -100,7 +107,8 @@ image 5
 In this step, you will create a group account. Group accounts can include user accounts or devices. These are two ways member are assigned to groups: Statically and Dynamically. Static groups require manual updates of adding and removing users by the administrator. Dynamic will do the steps based off of properties associated with the user. For example, their job title or department.
 
 1. In the Azure portal, search for and select `Groups`.
-image9
+
+![step9](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/6b278ab9-db24-4fd4-b2f8-00a0107967aa)
 
 1. Select **+ New group** and create a new group. 
 
@@ -113,7 +121,7 @@ image9
 
     >**Note**: There are other options in the **Membership type** drop-down. An Entra ID Premium P1 or P2 license is required for dynamic membership. 
 
-    ![image10]()
+![step10](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/d3f885a1-29d1-4790-97ef-c330e93c1fe3)
 
 1. Select **No owners selected**.
 
@@ -133,10 +141,11 @@ In this step, you will be working with the Azure Cloud Shell. Azure Cloud Shell 
 
 1. Select the **Cloud Shell** icon in the top right of the Azure Portal. If you'd like, you can navigate directly to `https://shell.azure.com`.
 
-Image11
+![step11](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/8d6237ea-2c44-4cd1-8280-5ab60ad22503)
 
 1. When prompted to select either **Bash** or **PowerShell**, select **PowerShell**.
-image12
+   
+![step12](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/daab670f-1c4d-44c6-bad0-f5c0e14456c6)
 
     >**Note:** If you mostly work with Linux systems, Bash feels more familiar. If you mostly work with Windows systems, Azure PowerShell feels more familiar. 
 
@@ -153,7 +162,8 @@ In this task, you create a resource group and a group account by using Azure Pow
    ```powershell
    Get-Help New-AzResourceGroup -detailed
    ```
-   image13
+ ![step13](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/6cf4989f-a3c2-4f1d-acdd-3e9562b22bc0)
+
 1. To create a resource group, run the following commands. Note that the commands starting with a dollar sign ($) are creating variables. Ensure you receive a succeeded message. 
 
    ```powershell
@@ -161,13 +171,14 @@ In this task, you create a resource group and a group account by using Azure Pow
    $rgName = 'wh102-rg-ps'
    New-AzResourceGroup -Name $rgName -Location $location
    ```
-image14
+![step14](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/00372f19-858b-4746-9c59-2809039a8dc6)
+
 1. To confirm if all the information was entered correct for the new resource group, run the following command:
 
    ```powershell
    Get-AzResourceGroup -Name $rgName
    ```
-   image15
+ ![step15](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/d921eb23-a9fe-45c4-846d-691480a97cb0)
 
 1. Now, let's try learn how to create an Azure group.
 
@@ -181,17 +192,19 @@ image14
    Connect-AzureAD 
    New-AzureADGroup -DisplayName "MyPSgroup" -MailEnabled $false -SecurityEnabled $true -MailNickName "MyPSgroup"
    ```
-   image16
+ ![step16](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/d17e741e-490c-4237-8e08-2f182c67d5a0)
 
 1. Return to the Azure portal. Confirm you have a new resource group and a new Azure group. You may need to Refresh the pages.
-   image17
+   
+ ![step17](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/f423e968-d5c2-4b1f-9d8e-becb71e8075f)
 
 ## Step 7: Using the Bash shell
 
 In this step, you will be creating a resource group and an Azure group by using Azure CLI within the Cloud Shell.
 
 1. Continue in the Cloud Shell. Use the drop-down to switch to **Bash**.
-   image18
+
+![step18](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/3dc39024-8e80-411f-9002-2a143ecde53a)
 
 >**Note:** You can use the arrow keys to move through the command history. It makes it easier to run prior commands instead of re-typing.
 
@@ -200,7 +213,8 @@ In this step, you will be creating a resource group and an Azure group by using 
    ```sh
    az group --help
    ```
-   image19
+ ![step19](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/dbf663b8-58cf-4da1-9b78-8a892a0d950b)
+
 
 1. The **create** option looks promising. Note the capitalized names create variables that you can reference in subsequent commands. 
 
@@ -209,7 +223,7 @@ In this step, you will be creating a resource group and an Azure group by using 
    LOCATION='eastus'
    az group create --name $RGNAME --location $LOCATION
    ```
-  ![ image20](https://imgur.com/4oKrX42)
+ ![step20](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/3fd0e78d-3362-4cd0-a3cb-ee9088dcc439)
    
 1. To verify and retrieve properties for the newly created resource group, use the **show** command. 
 
@@ -227,19 +241,21 @@ In this step, you will be creating a resource group and an Azure group by using 
    az ad group create --display-name MyCLIgroup --mail-nickname MyCLIgroup
    az ad group list
    ```
-  ![../media/az104-lab01-architecture.png](https://imgur.com/rVGHFDh)
+ ![step21](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/f44ac5c0-1974-45cb-819d-44d3f43d61ed)
 
-1. Return to the Azure portal. Confirm you have a new resource group and a new Azure group. You may need to Refresh the pages.   
+
+1. Return to the Azure portal. Confirm you have a new resource group and a new Azure group. You may need to Refresh the pages.
+![step22](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/20e0b985-25ad-4d80-8146-cb1597d73371)
+
     
-## Key takeaways
+## Take-Aways
 
 Thank you for following along on this setup. Here are some main take-aways from this exercise:
 
 + The Azure portal is a good way to get started with creating and managing Azure resources. Administrators can customize the portal and share dashboards.
-+ Resource groups are a way of grouping related resources,. You can use a resource group for a project, a department, or an application. This makes it easy to manage and monitor a group of related resources. 
-+ There are different types of user accounts in Microsoft Entra ID. Each user account type has a level of access specific to the scope of work expected. 
-+ Group accounts group together related users or devices. Group membership can be assigned statically or dynamically. 
-+ The Cloud Shell is an interactive, authenticated terminal for managing Azure resources. The Cloud Shell provides access to Bash or Azure PowerShell.
++ Resource groups are the best way to group resources together.
++ There are different types of user accounts in Microsoft Entra ID. Each user account type has a level of access.
++ Group accounts group together related users or devices. Group membership can be assigned statically or dynamically. Whichever is best for the business.
 + Azure PowerShell and Bash provide a scripted way to create resources. 
 
 
