@@ -10,7 +10,7 @@ Your company is establishing a fresh laboratory setting for pre-production exami
 
 <h2>Architecture Diagram</h2>
 
-<img src="https://imgur.com/BeyIE2g" alt="Diagram"/>
+![Microsoft Entra ID drawio](https://github.com/loddysworld/Managing-Microsoft-Entra-ID-Identities/assets/134660738/c836bf0e-61a1-4aff-b98b-671b43f7bd8e)
 
 <h2>Skills</h2>
 
